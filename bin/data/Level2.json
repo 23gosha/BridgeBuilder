@@ -1,0 +1,26 @@
+{
+	"objects" : 
+	[
+		{
+			"type" : "link",
+			"pos0" : [0.0, 800.0],
+			"pos1" : [800.0, 0.0]
+		},
+		{
+			"type" : "initialParticle",
+			"pos0" : [120.0, 520.0]
+		},
+		{
+			"type" : "initialParticle",
+			"pos0" : [560.0, 400.0]
+		},
+		{
+			"type" : "initialParticle",
+			"pos0" : [200.0, 200.0]
+		}
+	],
+	"backgroundTexture" :
+	{
+		"name" : "data/BackGround.png"
+	}
+}

@@ -1,0 +1,4 @@
+<Objects>
+	<Ship name="Player ship" isPlayerControlled="true" pos="0 0" />
+	<Ship name="Player ship" pos="0 -100" />
+</Objects>

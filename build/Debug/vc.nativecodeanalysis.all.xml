@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>2509</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>'newString' could be '0':  this does not adhere to the specification for the function 'memcpy'. </DESCRIPTION>
+    <FUNCTION>Json::duplicateStringValue</FUNCTION>
+    <DECORATED>?duplicateStringValue@Json@@YAPEADPEBD_K@Z</DECORATED>
+    <FUNCLINE>2496</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2500</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2503</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2504</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'newString' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2505</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2506</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2505</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2509</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'newString' is an In/Out argument to 'memcpy' (declared at c:\program files (x86)\microsoft visual studio 14.0\vc\include\vcruntime_string.h:40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2509</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'newString' should not be NULL, because this is not consistent with the SAL annotation on 'memcpy'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>2510</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'newString':  the writable size is 'length+1' bytes, but 'length' bytes might be written.</DESCRIPTION>
+    <FUNCTION>Json::duplicateStringValue</FUNCTION>
+    <DECORATED>?duplicateStringValue@Json@@YAPEADPEBD_K@Z</DECORATED>
+    <FUNCLINE>2496</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2503</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'length' is an Input to 'malloc' (declared at c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h:97)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2500</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2503</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'newString' is a 0 byte array</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2504</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2509</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'length' is an Input to 'memcpy' (declared at c:\program files (x86)\microsoft visual studio 14.0\vc\include\vcruntime_string.h:40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2510</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid write to 'newString', (outside its writable range)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>2510</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer 'newString'. See line 2509 for an earlier location where this can occur</DESCRIPTION>
+    <FUNCTION>Json::duplicateStringValue</FUNCTION>
+    <DECORATED>?duplicateStringValue@Json@@YAPEADPEBD_K@Z</DECORATED>
+    <FUNCLINE>2496</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2500</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2503</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2504</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'newString' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2505</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2506</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2505</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2509</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'newString' is an In/Out argument to 'memcpy' (declared at c:\program files (x86)\microsoft visual studio 14.0\vc\include\vcruntime_string.h:40)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2510</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'newString' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>2532</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer 'newString'. </DESCRIPTION>
+    <FUNCTION>Json::duplicateAndPrefixStringValue</FUNCTION>
+    <DECORATED>?duplicateAndPrefixStringValue@Json@@YAPEADPEBDI@Z</DECORATED>
+    <FUNCLINE>2516</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2522</LINE>
+        <COLUMN>0</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2525</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2526</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2527</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'newString' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2528</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2529</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2528</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2532</LINE>
+        <COLUMN>42</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'newString' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>2614</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer 'text'. </DESCRIPTION>
+    <FUNCTION>Json::Value::CommentInfo::setComment</FUNCTION>
+    <DECORATED>?setComment@CommentInfo@Value@Json@@QEAAXPEBD_K@Z</DECORATED>
+    <FUNCLINE>2608</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2609</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2613</LINE>
+        <COLUMN>2</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'text' may be NULL (Enter this branch)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+        <FILENAME>jsoncpp.cpp</FILENAME>
+        <LINE>2614</LINE>
+        <COLUMN>0</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'text' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\</FILEPATH>
+      <FILENAME>jsoncpp.cpp</FILENAME>
+      <LINE>4112</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Mismatch on sign: 'unsigned int' passed as _Param_(3) when some signed type is required in call to 'sprintf'.</DESCRIPTION>
+    <FUNCTION>Json::valueToString</FUNCTION>
+    <DECORATED>?valueToString@Json@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N_NI@Z</DECORATED>
+    <FUNCLINE>4105</FUNCLINE>
+    <PATH />
+  </DEFECT></DEFECTS>

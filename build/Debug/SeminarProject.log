@@ -1,0 +1,20 @@
+﻿  GameSystem.cpp
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(22): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(99): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(101): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(142): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(276): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(332): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(335): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(461): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(462): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(507): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(539): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\src\gamesystem.cpp(556): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  SeminarProject.vcxproj -> C:\Users\user\Projects C++\2016\Projects Experiments\13.05.2016\13.05.2016\project\..\bin\SeminarProject.exe
+  SeminarProject.vcxproj -> C:\Users\user\Projects C++\2016\Projects Experiments\13.05.2016\13.05.2016\project\..\bin\SeminarProject.pdb (Partial PDB)
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\jsoncpp.cpp(2509): warning C6387: 'newString' could be '0':  this does not adhere to the specification for the function 'memcpy'. 
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\jsoncpp.cpp(2510): warning C6386: Buffer overrun while writing to 'newString':  the writable size is 'length+1' bytes, but 'length' bytes might be written.
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\jsoncpp.cpp(2510): warning C6011: Dereferencing NULL pointer 'newString'. See line 2509 for an earlier location where this can occur
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\jsoncpp.cpp(2532): warning C6011: Dereferencing NULL pointer 'newString'. 
+c:\users\user\projects c++\2016\projects experiments\13.05.2016\13.05.2016\project\dependencies\jsoncpp\jsoncpp.cpp(2614): warning C6011: Dereferencing NULL pointer 'text'. 

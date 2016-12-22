@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\GameSystem.cpp" />
+    <ClCompile Include="..\..\src\Sprite.cpp" />
+    <ClCompile Include="..\..\src\Vector2f.cpp" />
+    <ClCompile Include="..\..\src\Background.cpp" />
+    <ClCompile Include="..\..\src\Plank.cpp" />
+    <ClCompile Include="..\..\src\Grid.cpp" />
+    <ClCompile Include="..\..\src\Car.cpp" />
+    <ClCompile Include="..\..\src\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\src\TmpPlank.cpp" />
+    <ClCompile Include="..\dependencies\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="..\..\src\InitialParticle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\GameSystem.h" />
+    <ClInclude Include="..\..\src\Sprite.h" />
+    <ClInclude Include="..\..\src\Vector2f.h" />
+    <ClInclude Include="..\..\src\ParticleSystem.h" />
+    <ClInclude Include="..\..\src\Background.h" />
+    <ClInclude Include="..\..\src\Plank.h" />
+    <ClInclude Include="..\..\src\Grid.h" />
+    <ClInclude Include="..\..\src\Car.h" />
+    <ClInclude Include="..\..\src\help.h" />
+    <ClInclude Include="..\..\src\TmpPlank.h" />
+    <ClInclude Include="..\..\src\InitialParticle.h" />
+  </ItemGroup>
+</Project>

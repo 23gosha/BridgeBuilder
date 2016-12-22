@@ -1,0 +1,51 @@
+{
+	"objects" : 
+	[
+		{
+			"type" : "ship",
+			"name" : "ship0",
+			"isPlayerControlled" : 1,
+			"pos" : [0.0, 0.0]
+		},
+		{
+			"type" : "ship",
+			"name" : "ship1",
+			"pos" : [0.0, 100.0]
+		},
+		{
+			"type" : "ship",
+			"name" : "ship2",
+			"pos" : [100.0, 100.0]
+		},
+		{
+			"type" : "ship",
+			"name" : "ship3",
+			"pos" : [100.0, 0.0]
+		},
+		{
+			"type" : "link",
+			"obj0" : "ship0",
+			"obj1" : "ship1"
+		},
+		{
+			"type" : "link",
+			"obj0" : "ship1",
+			"obj1" : "ship2"
+		},
+		{
+			"type" : "link",
+			"obj0" : "ship2",
+			"obj1" : "ship3"
+		},
+		{
+			"type" : "link",
+			"obj0" : "ship3",
+			"obj1" : "ship0"
+		},
+		{
+			"type" : "link",
+			"obj0" : "ship0",
+			"obj1" : "ship2"
+		}
+	]
+}

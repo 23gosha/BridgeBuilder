@@ -1,0 +1,47 @@
+{
+	"objects" : 
+	[
+		{
+			"type" : "link",
+			"pos0" : [0.0, 480.0],
+			"pos1" : [120.0, 480.0]
+		},
+		{
+			"type" : "link",
+			"pos0" : [760.0, 480.0],
+			"pos1" : [800.0, 480.0]
+		},
+		{
+			"type" : "link",
+			"pos0" : [120.0, 480.0],
+			"pos1" : [120.0, 680.0]
+		},
+		{
+			"type" : "link",
+			"pos0" : [120.0, 680.0],
+			"pos1" : [680.0, 680.0]
+		},
+		{
+			"type" : "link",
+			"pos0" : [680.0, 680.0],
+			"pos1" : [760.0, 480.0]
+		},
+		{
+			"type" : "link",
+			"pos0" : [0.0, 800.0],
+			"pos1" : [3000.0, 800.0]
+		},
+		{
+			"type" : "initialParticle",
+			"pos0" : [120.0, 480.0]
+		},
+		{
+			"type" : "initialParticle",
+			"pos0" : [760.0, 480.0]
+		}
+	],
+	"backgroundTexture" :
+	{
+		"name" : "data/texture.png"
+	}
+}

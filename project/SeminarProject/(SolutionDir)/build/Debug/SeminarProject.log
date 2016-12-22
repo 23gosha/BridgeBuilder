@@ -1,0 +1,3 @@
+﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+  main.cpp
+c:\users\user\projects\2016\seminarsolution\src\main.cpp : fatal error C1041: cannot open program database 'C:\Users\user\Projects\2016\SeminarSolution\project\SeminarProject\(SolutionDir)..\build\Debug\vc140.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
