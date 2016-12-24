@@ -5,11 +5,11 @@ The amount of the constructon material is limited. The gamer wins and proceeds t
 car crosses the bridge. 
 
 Libraries used:
-SFML
-json
-vector
-math
-cmath
-string
-map
-iostream
+- SFML
+- json
+- vector
+- math
+- cmath
+- string
+- map
+- iostream
